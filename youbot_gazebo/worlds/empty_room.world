@@ -8,7 +8,14 @@
             <uri>model://sun</uri>
         </include>
         <include>
-            <uri>file:///home/mic/workspace/hydro/catkin_ws/src/youbot_ros_tools/youbot_gazebo/worlds/EmptyRoom</uri>
+            <uri>file:///home/pandora/catkin_youbot/src/youbot_ros_tools/youbot_gazebo/worlds/EmptyRoom</uri>
         </include>
+        <!--<include>
+            <uri>file://youbot_gazebo/worlds/EmptyRoom</uri>
+        </include> -->
+        <!-- <include file="$(find youbot_gazebo)/worlds/EmptyRoom" /> -->
+        <!--<include>
+            <uri>file://worlds/EmptyRoom</uri>
+        </include>-->
   </world>
 </sdf>
