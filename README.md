@@ -50,9 +50,25 @@ roslaunch youbot_control youbot_control.launch ns:=/youbot1
 
 roslaunch youbot_teleop youbot_teleop.launch ns:=/youbot0
 roslaunch youbot_teleop youbot_teleop.launch ns:=/youbot1
+```
+
+The wiki page about [understanding launch and namespaces][6] gives more insight in this direction.
+
+----
+
+To analyse the topics you can use `rqt_graph`
 
 ```
-The wiki page about [understanding launch and namespaces][6] gives more insight in this direction.
+roscore & rosrun rqt_graph rqt_graph
+```
+
+For example to view the data of the scanner you can: ``rostopic echo /youbot/scan_front > scanner_output``
+
+----
+
+Check the sensor
+
+The output of the sensor can be verified via ```rosrun youbot_scannerViz scannerViz.py```
 
 ## Credits
 The Xacro URDF description and the meshes for the robot have been taken from the WPI's [youbot_description][4] package. A lot of the code for this repository has been written by [@Arn-O][5].
